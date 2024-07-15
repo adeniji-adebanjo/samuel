@@ -176,6 +176,12 @@ header .btn button:hover {
     display: block;
     position: absolute;
   }
+
+  /* hero styles on mobile */
+  .hero1 .hero-content {
+    width: 100%;
+    /* padding: 0 2rem; */
+  }
 }
 
 header .hamburger .dropdown-content {
