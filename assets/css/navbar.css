@@ -94,6 +94,57 @@ header .btn button:hover {
   padding-left: 2rem;
 }
 
+/* About Section styles */
+.about-us {
+  padding: 5rem;
+}
+.about-hero {
+  display: flex;
+  column-gap: 5rem;
+  align-items: center;
+}
+
+.about-hero .about-col-1 p span {
+  text-transform: uppercase;
+}
+
+.about-hero .about-col-1 p {
+  font-size: 13px;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+
+.about-col-1 .col-1-content {
+  margin-left: 5.5rem;
+}
+
+.about-col-1 .col-1-content h3 {
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+.about-col-1 .col-1-content button {
+  background-color: var(--primary-yellow-btn);
+  color: var(--text-dark);
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.about-us .about-partners {
+  padding: 5rem 0 3rem;
+}
+.about-us .about-partners p {
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+.about-us .about-partners img {
+  /* align-content: center; */
+  justify-content: center;
+  margin-right: 2rem;
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   nav {
