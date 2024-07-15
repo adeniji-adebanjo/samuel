@@ -14,6 +14,10 @@ header .logo {
   display: flex;
   align-items: center;
 }
+
+header h4 span {
+  font-family: "Courgette", cursive;
+}
 header nav a {
   margin: 0 15px;
   text-decoration: none;
@@ -33,39 +37,63 @@ header .btn button {
   border: 1px solid #000;
   cursor: pointer;
 }
-.hero button {
-  background-color: #fff;
-  color: #000;
-  padding: 10px;
-  border: 1px solid #000;
-  cursor: pointer;
-}
 header .btn button:hover {
   background-color: #000;
   color: #fff;
   padding: 10px;
   cursor: pointer;
 }
-.hero button:hover {
+
+/* Hero style */
+.hero {
+  background-image: url("/assets/images/heroBG.png");
+  background-size: cover;
+  background-position: center center;
+  padding: 7rem 0 3rem;
+  color: var(--text-white);
+}
+.hero1 {
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.hero1 .hero-content {
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.hero1 .hero-content h4 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+}
+
+.hero1 .hero-content button {
+  background-color: var(--text-white);
+  color: var(--text-dark);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.hero1 button:hover {
   background-color: #000;
   color: #fff;
   padding: 10px;
   cursor: pointer;
+  border: var(--text-white) 1px solid;
 }
-/* Hero style */
-.hero {
-  background-image: url("https://picsum.photos/1080/500");
-  background-size: cover;
-  background-position: center center;
-  padding: 7rem 0 10rem;
-  text-align: center;
+
+.hero1 .hero-content a {
+  color: var(--text-white);
+  text-decoration: none;
 }
-.hero h4 {
-  font-size: 50px;
+
+.hero .stats {
+  padding-left: 2rem;
 }
-.hero p {
-  font-size: 15px;
-}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   nav {
