@@ -1,0 +1,116 @@
+header .hamburger .dropdown-content {
+  display: none;
+  /* position: absolute; */
+}
+/* .fa-bars {
+  display: none;
+} */
+.find {
+  padding: 5rem;
+  background-image: url("https://picsum.photos/1080/500");
+  background-position: center center;
+  background-size: contain;
+  background: #000 fixed;
+  /* background-repeat: no-repeat; */
+  /* opacity: 0.2; */
+}
+
+.find p {
+  font-weight: 800;
+  color: #fffefe;
+}
+
+.freeform p {
+  padding: 5em;
+  border-left: 5px solid blue;
+  background-color: aliceblue;
+  margin: 3em 5em;
+}
+.freeform pre {
+  padding: 2em 5em;
+  text-align: right;
+  border: 5px double blue;
+  background-color: aliceblue;
+  margin: 3em 5em;
+  line-height: 2em;
+  border-radius: 20px;
+}
+.freeform pre button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.freeform pre button:hover {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* CSS Carousels */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%;
+  flex: 1;
+}
+
+.carousel img {
+  width: 100%;
+  display: block;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-controls label {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .carousel-inner {
+  transform: translateX(0);
+}
+
+#slide2:checked ~ .carousel-inner {
+  transform: translateX(-33.333%);
+}
+
+#slide3:checked ~ .carousel-inner {
+  transform: translateX(-66.666%);
+}
+
+#slide1:checked ~ .carousel-controls label[for="slide1"],
+#slide2:checked ~ .carousel-controls label[for="slide2"],
+#slide3:checked ~ .carousel-controls label[for="slide3"] {
+  background-color: #333;
+}

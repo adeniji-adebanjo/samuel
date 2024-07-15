@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/svg/Approval.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <title>Navbar sample</title>
+    <style>
+      * {
+        font-family: "Montserrat", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 25px;
+        position: relative;
+      }
+      header .logo {
+        display: flex;
+        align-items: center;
+      }
+      header nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #000;
+      }
+      header nav a:hover {
+        border-bottom: 2px solid #000;
+      }
+      header nav a.active {
+        font-weight: 600;
+        border-bottom: 2px solid #000;
+      }
+      header .btn button {
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+      .hero button {
+        background-color: #fff;
+        color: #000;
+        padding: 10px;
+        border: 1px solid #000;
+        cursor: pointer;
+      }
+      header .btn button:hover {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .hero button:hover {
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+      }
+      /* Hero style */
+      .hero {
+        background-image: url("https://picsum.photos/1080/500");
+        background-size: cover;
+        background-position: center center;
+        padding: 7rem 0 10rem;
+        text-align: center;
+      }
+      .hero h4 {
+        font-size: 50px;
+      }
+      .hero p {
+        font-size: 15px;
+      }
+      /* Mobile styles */
+      @media (max-width: 768px) {
+        nav {
+          display: none; /* Hide navigation by default */
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: #fff;
+          z-index: 1;
+        }
+
+        nav a {
+          padding: 10px 20px;
+          border-bottom: 1px solid #ccc;
+        }
+
+        /* header .hamburger {
+          display: block;
+        } */
+
+        .fa-bars {
+          cursor: pointer;
+          display: block;
+        }
+
+        .hamburger:hover .dropdown-content {
+          display: block;
+          position: absolute;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h2>Navbar sample</h2> -->
+    <header>
+      <div class="logo">
+        <img src="assets/svg/Approval.svg" alt="" width="50px" height="50px" />
+        <h4>COBHR</h4>
+      </div>
+
+      <nav>
+        <a class="active" href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </nav>
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+        <div class="dropdown-content">
+          <p class="active" href="#">Home</p>
+          <p href="#">About</p>
+          <p href="#">Pricing</p>
+          <p href="#">Blog</p>
+          <p href="#">Contact</p>
+        </div>
+      </div>
+      <div class="btn">
+        <button type="button">Sign up!</button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+      <h4>Welcome to Miami!</h4>
+      <p>
+        Your One-stop shop for all products of Louis Vuitton. Lorem, ipsum dolor
+        sit amet consectetur adipisicing elit. Suscipit, ipsa natus sequi cum
+        quibusdam impedit?
+      </p>
+      <p style="align-content: center; font-size: 10px">
+        Lorem ipsum <span><img src="Line.svg" alt="" /> </span> dolor sit amet.
+      </p>
+      <button type="button">Get Started!</button>
+    </div>
+
+    <!-- Test design -->
+    <div class="find" style="background-image: url('/SA_header-1.png')">
+      <!-- <img src="SA_header-1.png" alt="" /> -->
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+    </div>
+    <div class="freeform">
+      <!-- <img src="SA_header-1.png" alt="" /> -->
+      <pre>
+        My name is Adebanjo
+        I live in my neighborhood
+        We're about 5 persons in my neighborhood
+        I run a cryptocurrencies business in my neighborhood
+        I want to japa to Thaiwan
+
+        <button>Sign up</button>
+      </pre>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p style="text-transform: uppercase">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque,
+        <a href="" style="text-decoration-line: none">laborum</a> illum autem
+        rem deleniti at modi dolore officia, perspiciatis quibusdam dicta,
+        blanditiis quis id facere iure ipsam! Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        aliquid neque, laborum illum autem rem deleniti at modi dolore officia,
+        perspiciatis quibusdam dicta, blanditiis quis id facere iure ipsam!
+        Quis!
+      </p>
+    </div>
+    <!-- CSS Carousels  -->
+
+    <div class="carousel">
+      <input type="radio" name="carousel" id="slide1" checked />
+      <input type="radio" name="carousel" id="slide2" />
+      <input type="radio" name="carousel" id="slide3" />
+
+      <div class="carousel-inner">
+        <div class="carousel-item" id="item1">
+          <img src="https://picsum.photos/150/70/" alt="Slide 1" />
+        </div>
+        <div class="carousel-item" id="item2">
+          <img src="https://picsum.photos/150/70/" alt="Slide 2" />
+        </div>
+        <div class="carousel-item" id="item3">
+          <img src="https://picsum.photos/150/70/" alt="Slide 3" />
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </div>
+  </body>
+</html>
