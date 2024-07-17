@@ -1,0 +1,58 @@
+/* Mobile styles */
+@media (max-width: 768px) {
+  /* nav {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  nav a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  } 
+
+  .fa-bars {
+    cursor: pointer;
+    display: block;
+  }
+
+  .hamburger:hover .dropdown-content {
+    display: block;
+    position: absolute;
+  } */
+
+  /* hero styles on mobile */
+  .hero1 .hero-content {
+    width: 100%;
+    /* padding: 0 2rem; */
+  }
+
+  /* about styles on mobile */
+  .about-us .about-hero {
+    display: inline-block;
+  }
+
+  /* partners styles on mobile */
+  .about-partners .partners {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+  /* What we do styles */
+  .wwd {
+    display: block;
+  }
+  .wwd .wwd-img img {
+    justify-items: center;
+    /* align-self: center; */
+    align-content: center;
+  }
+}
