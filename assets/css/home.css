@@ -228,6 +228,7 @@ header .hamburger .dropdown-content {
   font-size: 40px;
   margin: 0 0 3rem 5.5rem;
 }
+
 .projects .project-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -241,30 +242,113 @@ header .hamburger .dropdown-content {
   padding: 3rem;
   color: var(--text-white);
   border-radius: 15px;
+  position: relative;
+  overflow: hidden;
 }
+
+.project-cards .pro::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #140e0e88;
+  z-index: 1;
+}
+
+.project-cards .pro h4,
+.project-cards .pro p,
+.project-cards .pro button,
+.project-cards .pro .content {
+  position: relative;
+  z-index: 2;
+}
+
+.project-cards .pro .content {
+  flex: 1;
+}
+
 .project-cards .pro h4 {
   font-size: 25px;
 }
+
 .project-cards .pro p {
   margin: 2rem 0 5rem;
   font-weight: normal;
 }
+
 .project-cards .pro button {
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   font-weight: 400;
+  align-self: flex-end;
 }
+
 .project-card1 {
   background-image: url("/assets/images/project-1.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .project-card2 {
   background-image: url("/assets/images/project2.png");
   background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .project-card3 {
   background-image: url("/assets/images/project-3.png");
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Stats Chart */
+.donation-chart {
+  display: flex;
+  align-items: center;
+  padding: 5rem;
+  column-gap: 10rem;
+  background-color: var(--text-dark);
+  color: var(--text-white);
+}
+.chart-col-1 h3 {
+  font-size: 40px;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.chart-col-1 p {
+  font-weight: 200;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.chart-col-1 .chart-stats ul {
+  list-style: none;
+  margin-left: 0;
+}
+
+.chart-stats li {
+  padding-left: 40px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 10px;
+}
+.stats-child {
+  background-image: url("/assets/svg/child-icon.svg");
+}
+.stats-clean {
+  background-image: url("/assets/svg/cleanliness-icon.svg");
+}
+.stats-help {
+  background-image: url("/assets/svg/help-icon.svg");
+}
+.stats-excursion {
+  background-image: url("/assets/svg/excursion-icon.svg");
+}
+.stats-feed {
+  background-image: url("/assets/svg/feeding-icon.svg");
 }
