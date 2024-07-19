@@ -450,6 +450,7 @@ button#donate {
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 .col-content .next-events h4 {
   font-size: 25px;
@@ -466,7 +467,7 @@ button#donate {
 footer {
   background-color: var(--text-dark);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   color: var(--text-white);
   padding: 5rem;
@@ -493,11 +494,40 @@ footer h4 {
   margin-bottom: 2rem;
   font-size: 15px;
 }
-
+footer p {
+  font-size: 13px;
+  font-weight: 200;
+  margin: 10px 0;
+}
 footer p a {
   color: var(--text-white);
   text-decoration: none;
 }
+footer .connect p.fas {
+  color: var(--text-white);
+}
 footer .newsletter {
-  width: 40%;
+  width: 30%;
+}
+
+footer .newsletter h3 {
+  margin: 2rem 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+footer .newsletter input,
+button {
+  /* width: 100%; */
+  padding: 15px 10px;
+}
+footer .newsletter input:focus {
+  outline: none;
+  color: var(--text-white);
+}
+footer .newsletter input {
+  background: none;
+  border: 1px solid var(--text-white);
+}
+footer .newsletter button {
+  cursor: pointer;
 }
