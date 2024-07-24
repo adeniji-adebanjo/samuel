@@ -1,0 +1,28 @@
+.wwd1 {
+  padding: 5rem;
+  background-color: var(--primary-yellow-bg);
+}
+/* .wwd1 .whatwedo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 4rem;
+} */
+
+.wwd1 .whatwedo {
+  display: flex;
+  column-gap: 3rem;
+  margin-top: 3rem;
+}
+.wwd1 h3#wwd-title {
+  font-size: 35px;
+}
+.wwd1 .whatwedo .col li {
+  margin-bottom: 3rem;
+}
+
+.wwd1 .whatwedo .col li p {
+  font-size: 13px;
+  margin: 10px 0;
+}

@@ -110,16 +110,19 @@ header .hamburger .dropdown-content {
   align-items: center;
 }
 
-.about-hero .about-col-1,
-.wwd-text,
-.project-title p span {
+.about-hero .about-col-1 p span,
+.wwd .wwd-text p span,
+.projects .project-1 .project-title p span {
   text-transform: uppercase;
 }
 
-.about-hero .about-col-1 p {
+.about-hero .about-col-1 p,
+.wwd .wwd-text p,
+.project-1 .project-title p {
   font-size: 13px;
   margin-bottom: 2rem;
   line-height: 1.5rem;
+  /* text-transform: capitalize; */
 }
 
 .col-1-content {
@@ -168,24 +171,21 @@ header .hamburger .dropdown-content {
   background-color: var(--primary-yellow-bg);
 }
 
-.wwd .wwd-text p {
-  font-size: 13px;
-  margin-bottom: 2rem;
-  line-height: 1.5rem;
-}
 .wwd-list {
   display: inline-flex;
   margin-left: 5.5rem;
 }
-.wwd-list ul {
+.wwd-list ul,
+.whatwedo ul {
   list-style: none;
   padding: 0;
 }
 
-.wwd-list li {
+.wwd-list li,
+.whatwedo li {
   padding-left: 40px;
   background-repeat: no-repeat;
-  background-position: left center;
+  background-position: left top;
   margin-bottom: 10px;
   margin-left: 30px;
 }
@@ -205,6 +205,15 @@ header .hamburger .dropdown-content {
 .icon-therapy {
   background-image: url("/assets/svg/therapy.svg");
 }
+.icon-basic-amenities {
+  background-image: url("/assets/svg/basic-amenities.svg");
+}
+.icon-education {
+  background-image: url("/assets/svg/education.svg");
+}
+.icon-public-outreach {
+  background-image: url("/assets/svg/public-outreach.svg");
+}
 
 /* Projects Styles */
 .projects {
@@ -218,11 +227,6 @@ header .hamburger .dropdown-content {
 }
 .project-1 .project-title {
   margin-left: 5.5rem;
-}
-.project-1 .project-title p {
-  font-size: 13px;
-  margin-bottom: 2rem;
-  line-height: 1.5rem;
 }
 
 .project-1 .project-title h3 {
