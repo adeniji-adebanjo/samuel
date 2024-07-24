@@ -2,13 +2,6 @@
   padding: 5rem;
   background-color: var(--primary-yellow-bg);
 }
-/* .wwd1 .whatwedo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 2rem;
-  grid-row-gap: 4rem;
-} */
 
 .wwd1 .whatwedo {
   display: flex;

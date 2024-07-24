@@ -1,0 +1,37 @@
+.about-us {
+  background-color: var(--primary-yellow-bg);
+  justify-content: space-around !important;
+  column-gap: 3rem !important;
+}
+
+.about-col-2 {
+  background-color: var(--text-white);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.about-col-2 .col {
+  margin: 10px 0;
+}
+
+.about-col-2 .col .blog {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.about-col-2 .blog img {
+  width: 100px;
+  height: 100px;
+}
+.about-col-2 .blog .blog-news h4 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.about-col-2 .blog .blog-news p#date {
+  font-size: 10px;
+  margin: 5px 0;
+  font-weight: 200;
+}
+.about-col-2 .blog .blog-news p {
+  font-size: 12px;
+}
