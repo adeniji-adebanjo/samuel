@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Tech Goals</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- <style>
+      .frontend-container {
+        background-color: red;
+        padding: 20px;
+      }
+    </style> -->
   </head>
   <body>
     <header>
@@ -27,6 +33,27 @@
     <footer>
       <p data-testid="footer">© 2024 My Tech Journey</p>
     </footer>
+
+    <div class="frontend-container">
+      <h3>Class Begins Today!</h3>
+      <p>My name is Kolade, I live in Calabar, South-South, Nigeria</p>
+      <ul>
+        <li>
+          I am <span id="you"></span> and I'm <span id="ans"> ...</span> years
+          old.
+        </li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+
+    <script>
+      // alert("My name is Kolade Ibrahim");
+      let name = prompt("What's your name?");
+      let age = prompt("How old are you?");
+      let result = (document.getElementById("ans").innerHTML = age);
+      let output = (document.getElementById("you").innerHTML = name);
+    </script>
     <script src="scripts.js"></script>
   </body>
 </html>
